@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ma&#039;lumotnoma</title>
+    <!-- Bootstrap CSS qo'shildi -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row justify-content-center" style="font-family: 'Times New Roman', Times, serif;">
+        <div class="col-md-10">
+            <table class="table" >
+                <thead>
+                    <tr>
+                        <th class="col-2" style="border: none;" rowspan="3">
+                            <img src="https://student.kiut.uz/images/logo.png" width="150" alt="logo">
+                        </th>
+                        <th class="col-10 text-center" style="border: none; font-size: 19pt;">TOSHKENT KIMYO XALQARO UNIVERSITETI</th>
+                    </tr>
+                    <tr>
+                        <th class="col-10 text-center" style="border: none; font-size: 19pt;">KIMYO INTERNATIONAL UNIVERSITY IN TASHKENT</th>
+                    </tr>
+                    <tr>
+                        <th class="col-10 text-center" style="border: none;">
+                            100121, Тошкент шаҳри, Яккасарой тумани, Усмон Носир кўчаси, 156 уй.<br>
+                            Тел.:+998 78 129 40 40. Веб-сайт: www.kiut.uz. Эл. почта: info@kiut.uz
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <hr>
+            <div class="text-right" style="font-size:12pt;">Ҳужжат яратилган сана: 23.12.2024</div>
+            <h3 class="text-center font-weight-bold my-4">ЎҚИШ ЖОЙИДАН МАЪЛУМОТНОМА</h3>
+            <table class="table">
+                <!-- Ma'lumotlar jadvali -->
+                <tr><td class="col-3" style="border: none;">Ф.И.О.:</td><td class="col-9" style="border: none;">SHARIPOV ELDOR ZOHIDJON O'G'LI</td></tr>
+                <tr><td class="col-3" style="border: none;">Паспорт рақами:</td><td class="col-9" style="border: none;">AB6755163</td></tr>
+                <tr><td class="col-3" style="border: none;">Таълим йўналиши:</td><td class="col-9" style="border: none;">70610501-M.Sc. Artificial Intelligence</td></tr>
+                <tr><td class="col-3" style="border: none;">Курс:</td><td class="col-9" style="border: none;">Биринчи</td></tr>
+                <tr><td class="col-3" style="border: none;">Таълим тили:</td><td class="col-9" style="border: none;">Ўзбек</td></tr>
+                <tr><td class="col-3" style="border: none;">Таълим шакли:</td><td class="col-9" style="border: none;">Магистратура</td></tr>
+                <tr><td class="col-3" style="border: none;">Таълим олиш давомийлиги:</td><td class="col-9" style="border: none;">2 академик йил</td></tr>
+                <tr><td class="col-3" style="border: none;">Асос: Ректор буйруғи:</td><td class="col-9" style="border: none;">13.09.24 y. N208</td></tr>
+            </table>
+            <p class="text-justify">
+                Маълумотнома сўралган жойга тақдим этиш учун берилди.<br>
+                Тошкент Кимё халқаро университети Ўзбекистон Республикаси Вазирлар Маҳкамаси
+                ҳузуридаги Таълим сифатини назорат қилиш давлат инспекцияси томонидан 2022 йил 21 октябрда
+                берилган 044527-сонли лицензияга ва Ўзбекистон Республикаси Вазирлар Маҳкамасининг
+                2019 йил 17 декабрдаги 1007-сонли қарорига асосан фаолият олиб боради. Ҳужжат ҳақиқийлигини QR-кодни сканер қилиш орқали текшириш мумкин.
+            </p>
+            <div id="qrcode" class="text-center"></div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap va jQuery qo'shildi -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery-qrcode.min.js"></script>
+<script>
+    $(function() {
+        $('#qrcode').qrcode({
+            text: 'https://student.kiut.uz/site/reference-print-client?id=35640946&lang=uz',
+            render: 'image',
+            size: 150
+        });
+        window.onload = function() {
+            window.print();
+        };
+    });
+</script>
+</body>
+</html>
